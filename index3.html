@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>Leave Approval Form</title>
+</head>
+<body>
+    <h1>Leave Approval Form</h1>
+    <form action="/submit-leave-approval" method="post">
+        
+        <div>
+            <label for="emp_name">Employee Name:</label>
+            <input type="text" id="emp_name" name="emp_name" required>
+        </div><br>
+
+        <div>
+            <label for="emp_id">Employee ID:</label>
+            <input type="text" id="emp_id" name="emp_id" required>
+        </div><br>
+
+        <div>
+            <label for="dept">Department:</label>
+            <input type="text" id="dept" name="dept" required>
+        </div><br>
+
+        <div>
+            <label for="leave_type">Type of Leave:</label>
+            <select id="leave_type" name="leave_type" required>
+                <option value="">--Select Leave Type--</option>
+                <option value="sick">Sick Leave</option>
+                <option value="vacation">Vacation Leave</option>
+                <option value="emergency">Emergency Leave</option>
+                <option value="personal">Personal Leave</option>
+            </select>
+        </div><br>
+
+        <div>
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_date" required>
+        </div><br>
+
+        <div>
+            <label for="end_date">End Date:</label>
+            <input type="date" id="end_date" name="end_date" required>
+        </div><br>
+
+        <div>
+            <label for="reason">Reason for Leave:</label>
+            <textarea id="reason" name="reason" rows="4" cols="50" required></textarea>
+        </div><br>
+
+        <div>
+            <label for="status">Approval Status:</label><br>
+            <input type="radio" id="approved" name="status" value="approved" required>
+            <label for="approved">Approved</label><br>
+            <input type="radio" id="rejected" name="status" value="rejected">
+            <label for="rejected">Rejected</label>
+        </div><br>
+
+        <div>
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </div><br><br>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

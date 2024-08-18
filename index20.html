@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subject Withdrawal Form</title>
+</head>
+<body>
+    <h1>Subject Withdrawal Form</h1>
+    <form action="submit.php" method="post">
+        <h2>Student Information</h2>
+        <label for="student_id">Student ID:</label>
+        <input type="text" id="student_id" name="student_id" required><br><br>
+
+        <label for="student_name">Student Name:</label>
+        <input type="text" id="student_name" name="student_name" required><br><br>
+
+        <h2>Course Information</h2>
+        <label for="year">Year</label>
+        <select id="year" name="year" required>
+            <option value="I">I</option>
+            <option value="II">II</option>
+            <option value="III">III</option>
+        </select><br><br>
+
+        <label for="course_code">Course Code:</label>
+        <input type="text" id="course_code" name="course_code" required><br><br>
+
+        <label for="course_name">Course Name:</label>
+        <input type="text" id="course_name" name="course_name" required><br><br>
+
+        <label for="section">Slot:</label>
+        <input type="text" id="section" name="section" required><br><br>
+
+        <h2>Withdrawal Reason</h2>
+        <label for="reason">Reason for Withdrawal:</label><br>
+        <textarea id="reason" name="reason" required></textarea><br><br>
+
+        <label for="withdrawal_date">Withdrawal Date:</label>
+        <input type="date" id="withdrawal_date" name="withdrawal_date" required><br><br>
+
+        <input type="submit" value="Submit Withdrawal Request">
+    </form>
+</body>
+</html>

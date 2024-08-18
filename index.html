@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>Contact Form</h1>
+    <form action="submit.php" method="post">
+        <h2>Contact Us</h2>
+        <table>
+            <tr>
+                <td><label for="name">Full Name:</label></td>
+                <td><input type="text" id="name" name="name" placeholder="Your Full Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address:</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Your Email Address" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" rows="3" placeholder="Your Address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td><input type="text" id="city" name="city" placeholder="Your City"></td>
+            </tr>
+            <tr>
+                <td><label for="state">State/Province:</label></td>
+                <td><input type="text" id="state" name="state" placeholder="Your State/Province"></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td><input type="text" id="country" name="country" placeholder="Your Country"></td>
+            </tr>
+            <tr>
+                <td><label for="zip_code">ZIP/Postal Code:</label></td>
+                <td><input type="text" id="zip_code" name="zip_code" placeholder="Your ZIP/Postal Code"></td>
+            </tr>
+            <tr>
+                <td><label for="subject">Subject:</label></td>
+                <td><input type="text" id="subject" name="subject" placeholder="Subject of Your Message" required></td>
+            </tr>
+            <tr>
+                <td><label for="message">Message:</label></td>
+                <td><textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="contact-method">Preferred Method of Contact:</label></td>
+                <td>
+                    <select id="contact-method" name="contact-method">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="mail">Mail</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Subscribe to Newsletter
+                </label></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">Submit</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

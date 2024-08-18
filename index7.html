@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form action="submit.php" method="post">
+        <h2>Your Information</h2>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <h2>Survey Questions</h2>
+        <h3>Overall Satisfaction</h3>
+        <label for="overall_satisfaction">How satisfied are you overall with our service?</label><br>
+        <input type="radio" id="very_satisfied" name="overall_satisfaction" value="very_satisfied"> Very Satisfied<br>
+        <input type="radio" id="satisfied" name="overall_satisfaction" value="satisfied"> Satisfied<br>
+        <input type="radio" id="neutral" name="overall_satisfaction" value="neutral"> Neutral<br>
+        <input type="radio" id="dissatisfied" name="overall_satisfaction" value="dissatisfied"> Dissatisfied<br>
+        <input type="radio" id="very_dissatisfied" name="overall_satisfaction" value="very_dissatisfied"> Very Dissatisfied<br><br>
+
+        <h3>Specific Feedback</h3>
+        <label for="feedback_1">Please provide feedback on the following aspects:</label><br>
+        <ul>
+            <li>Customer service:</li>
+            <input type="range" id="customer_service_rating" name="customer_service_rating" min="1" max="5" value="3"><br>
+            <textarea id="customer_service_feedback" name="customer_service_feedback"></textarea><br><br>
+
+            <li>Product quality:</li>
+            <input type="range" id="product_quality_rating" name="product_quality_rating" min="1" max="5" value="3"><br>
+            <textarea id="product_quality_feedback" name="product_quality_feedback"></textarea><br><br>
+
+            <li>Pricing:</li>
+            <input type="range" id="pricing_rating" name="pricing_rating" min="1" max="5" value="3"><br>
+            <textarea id="pricing_feedback" name="pricing_feedback"></textarea><br><br>
+        </ul>
+
+        <label for="additional_feedback">Any additional feedback or suggestions?</label><br>
+        <textarea id="additional_feedback" name="additional_feedback"></textarea><br><br>
+
+        <input type="submit" value="Submit Survey">
+    </form>
+</body>
+</html>

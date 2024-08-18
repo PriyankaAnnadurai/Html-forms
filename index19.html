@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam Slot Booking</title>
+</head>
+<body>
+    <h1>Exam Slot Booking</h1>
+    <form action="submit.php" method="post">
+        <label for="student_id">Student ID:</label>
+        <input type="text" id="student_id" name="student_id" required><br><br>
+        <label for="student_name">Student Name:</label>
+        <input type="text" id="student_name" name="student_name" required><br><br>
+        <label for="dept_name">Dept:</label>
+        <select id="dept_name" name="dept_name" required>
+            <option value="AIDS">AIDS</option>
+            <option value="AIML">AIML</option>
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            </select><br><br>
+        <label for="exam_name">Exam Name:</label>
+        <select id="exam_name" name="exam_name" required>
+            <option value="Module">Module</option>
+            <option value="Training">Training</option>
+            <option value="CIA">CIA</option>
+            <option value="SA">SA</option>
+            </select><br><br>
+
+        <label for="date">Exam Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="time_slot">Time Slot:</label>
+        <select id="time_slot" name="time_slot" required>
+            <option value="9:00 AM - 11:00 AM">9:00 AM - 11:00 AM</option>
+            <option value="11:00 AM - 1:00 PM">11:00 AM - 1:00 PM</option>
+            <option value="1:00 PM - 3:00 PM">11:00 AM - 1:00 PM</option>
+            <option value="3:00 AM - 5:00 PM">11:00 AM - 1:00 PM</option>
+            </select><br><br>
+
+        <input type="submit" value="Book Slot">
+    </form>
+</body>
+</html>

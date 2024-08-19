@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Form</title>
+</head>
+<body>
+
+    <div>
+        <h2 align="center">Legal Form</h2>
+
+        <form action="submit_legal_form.php" method="post">
+
+            <!-- Personal Details -->
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+            </fieldset>
+
+            <!-- Address Details -->
+            <fieldset>
+                <legend>Address Details</legend>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required><br><br>
+
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required><br><br>
+
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip" name="zip" required><br><br>
+
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required><br><br>
+            </fieldset>
+
+            <!-- Legal Information -->
+            <fieldset>
+                <legend>Legal Information</legend>
+
+                <label for="legal_id">Legal ID Number:</label>
+                <input type="text" id="legal_id" name="legal_id" required><br><br>
+
+                <label for="issue_date">Issue Date:</label>
+                <input type="date" id="issue_date" name="issue_date" required><br><br>
+
+                <label for="expiry_date">Expiry Date:</label>
+                <input type="date" id="expiry_date" name="expiry_date" required><br><br>
+            </fieldset>
+
+            <!-- Terms and Conditions -->
+            <fieldset>
+                <legend>Terms and Conditions</legend>
+
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions.</label><br><br>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

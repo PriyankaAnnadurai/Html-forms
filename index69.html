@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accident Investigation Form</title>
+</head>
+<body>
+
+    <h1>Accident Investigation Form</h1>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Incident Details</legend>
+            
+            <label for="date">Date of Incident:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+            
+            <label for="time">Time of Incident:</label>
+            <input type="time" id="time" name="time" required>
+            <br><br>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            <br><br>
+
+            <label for="description">Description of Incident:</label>
+            <textarea id="description" name="description" rows="4" cols="50" required></textarea>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Involved Parties</legend>
+
+            <label for="name">Name of Person Reporting:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="contact">Contact Information:</label>
+            <input type="text" id="contact" name="contact" required>
+            <br><br>
+
+            <label for="witnesses">Witnesses (if any):</label>
+            <textarea id="witnesses" name="witnesses" rows="4" cols="50"></textarea>
+            <br><br>
+
+            <label for="injuries">Injuries Reported:</label>
+            <textarea id="injuries" name="injuries" rows="4" cols="50"></textarea>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <label for="cause">Possible Cause of Incident:</label>
+            <textarea id="cause" name="cause" rows="4" cols="50"></textarea>
+            <br><br>
+
+            <label for="action">Action Taken:</label>
+            <textarea id="action" name="action" rows="4" cols="50"></textarea>
+            <br><br>
+        </fieldset>
+
+        <button type="submit">Submit Report</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Submission Form</title>
+</head>
+<body>
+
+    <h1 align="center">Assignment Submission Form</h1>
+
+    <form action="submit_assignment.php" method="post">
+
+        <!-- Student Information -->
+        <fieldset>
+            <legend>Student Information</legend>
+            <table>
+                <tr>
+                    <td><label for="student_name">Full Name:</label></td>
+                    <td><input type="text" id="student_name" name="student_name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="student_id">Student ID:</label></td>
+                    <td><input type="text" id="student_id" name="student_id" required></td>
+                </tr>
+                <tr>
+                    <td><label for="student_email">Email:</label></td>
+                    <td><input type="email" id="student_email" name="student_email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="student_course">Course:</label></td>
+                    <td><input type="text" id="student_course" name="student_course" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Assignment Details -->
+        <fieldset>
+            <legend>Assignment Details</legend>
+            <table>
+                <tr>
+                    <td><label for="assignment_title">Assignment Title:</label></td>
+                    <td><input type="text" id="assignment_title" name="assignment_title" required></td>
+                </tr>
+                <tr>
+                    <td><label for="assignment_subject">Subject:</label></td>
+                    <td><input type="text" id="assignment_subject" name="assignment_subject" required></td>
+                </tr>
+                <tr>
+                    <td><label for="submission_date">Submission Date:</label></td>
+                    <td><input type="date" id="submission_date" name="submission_date" required></td>
+                </tr>
+                <tr>
+                    <td><label for="comments">Comments:</label></td>
+                    <td><textarea id="comments" name="comments" rows="4"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- File Upload Section -->
+        <fieldset>
+            <legend>Upload Assignment</legend>
+            <table>
+                <tr>
+                    <td><label for="assignment_file">Select File:</label></td>
+                    <td><input type="file" id="assignment_file" name="assignment_file" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Submission Section -->
+        <div>
+            <input type="submit" value="Submit Assignment">
+            <input type="reset" value="Reset Form">
+        </div>
+
+    </form>
+
+</body>
+</html>
